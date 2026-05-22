@@ -26,7 +26,7 @@
             <div class="flex justify-between items-start">
                 <div>
                     <h1 class="text-2xl md:text-3xl font-bold mb-2">💼 ระบบคำนวณเงินเดือนรายวิก</h1>
-                    <p class="text-indigo-100 text-sm md:text-base">✓ ค่าแรง 380 บาท + OT 1.5 เท่า | จ่าย 25 และ 10 ของทุกเดือน</p>
+                    <p class="text-indigo-100 text-sm md:text-base">✓ ค่าแรง 380 บาท + OT 1.5 เท่า | จ่าย 25 แล้ว 10 ของทุกเดือน</p>
                 </div>
                 <button onclick="toggleDarkMode()" class="bg-white/20 hover:bg-white/30 px-3 py-2 rounded-lg text-sm transition">
                     🌙
@@ -102,7 +102,7 @@
                         <input type="number" id="w1Sso" value="425" step="25" oninput="calculatePayroll()" class="w-full px-3 py-2 border border-red-200 bg-red-50 rounded-lg text-sm text-right text-red-700 input-field">
                     </div>
                     <div>
-                        <label class="block text-xs font-medium text-slate-500 mb-2">หักอื่น ๆ (บาท)</label>
+                        <label class="block text-xs font-medium text-slate-500 mb-2">หักอื่น ฯ (บาท)</label>
                         <input type="number" id="w1Other" value="0" step="50" oninput="calculatePayroll()" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm text-right input-field" placeholder="ตัวอักษร 0">
                     </div>
                 </div>
@@ -131,7 +131,7 @@
                         <input type="number" id="w2Sso" value="425" step="25" oninput="calculatePayroll()" class="w-full px-3 py-2 border border-red-200 bg-red-50 rounded-lg text-sm text-right text-red-700 input-field">
                     </div>
                     <div>
-                        <label class="block text-xs font-medium text-slate-500 mb-2">หักอื่น ๆ (บาท)</label>
+                        <label class="block text-xs font-medium text-slate-500 mb-2">หักอื่น ฯ (บาท)</label>
                         <input type="number" id="w2Other" value="0" step="50" oninput="calculatePayroll()" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm text-right input-field" placeholder="เช่น ค่าจำนำ">
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                 <p id="totalOtHours" class="text-2xl font-bold text-purple-600">84</p>
             </div>
             <div class="bg-gradient-to-br from-emerald-50 to-teal-50 p-4 rounded-xl border border-emerald-200">
-                <p class="text-xs text-slate-600 mb-1">รายรับสุทธิรวม</p>
+                <p class="text-xs text-slate-600 mb-1">รายรับสุทธิ</p>
                 <p id="summaryNet" class="text-2xl font-bold text-emerald-600">0.00</p>
             </div>
             <div class="bg-gradient-to-br from-amber-50 to-orange-50 p-4 rounded-xl border border-amber-200">
@@ -181,7 +181,7 @@
                         <tr>
                             <th class="px-4 py-3 text-left">รายการเงินเข้า / รายการหัก</th>
                             <th class="px-4 py-3 text-right text-amber-700 bg-amber-50/50">วิก 1 (จ่าย 25)</th>
-                            <th class="px-4 py-3 text-right text-emerald-700 bg-emerald-50/50">วิก 2 (จ���าย 10)</th>
+                            <th class="px-4 py-3 text-right text-emerald-700 bg-emerald-50/50">วิก 2 (จ่าย 10)</th>
                             <th class="px-4 py-3 text-right bg-slate-200 font-bold text-slate-900">รวมทั้งเดือน</th>
                         </tr>
                     </thead>
@@ -237,7 +237,7 @@
                             <td id="lblTotalFundPaid" class="px-4 py-3 text-right bg-slate-100 font-bold text-red-700">0.00</td>
                         </tr>
                         <tr>
-                            <td class="px-4 py-3 font-medium text-slate-900">หัก อื่น ๆ</td>
+                            <td class="px-4 py-3 font-medium text-slate-900">หัก อื่น ฯ</td>
                             <td id="lblW1OtherPaid" class="px-4 py-3 text-right font-medium text-red-600">0.00</td>
                             <td id="lblW2OtherPaid" class="px-4 py-3 text-right font-medium text-red-600">0.00</td>
                             <td id="lblTotalOtherPaid" class="px-4 py-3 text-right bg-slate-100 font-bold text-red-700">0.00</td>
@@ -270,7 +270,7 @@
             <div class="bg-gradient-to-r from-slate-900 to-slate-800 text-white p-6 rounded-2xl flex justify-between items-center shadow-lg">
                 <div>
                     <span class="font-bold text-lg">💰 สรุปยอดรับสุทธิรวมเต็มเดือน</span>
-                    <p class="text-sm text-slate-300 mt-1">หลังหักประกันสังคม กองทุน และรายการหักอื่น ๆ ทั้งหมด</p>
+                    <p class="text-sm text-slate-300 mt-1">หลังหักประกันสังคม กองทุน และรายการหักอื่น ฯ ทั้งหมด</p>
                 </div>
                 <div id="netTotal" class="text-4xl font-black text-yellow-300">0.00 บาท</div>
             </div>
@@ -414,7 +414,7 @@
             rows.push(['ค่าล่วงเวลา', document.getElementById('lblW1OtPay').innerText, document.getElementById('lblW2OtPay').innerText, document.getElementById('lblTotalOtPay').innerText]);
             rows.push(['ค่าข้าว', document.getElementById('lblW1Food').innerText, document.getElementById('lblW2Food').innerText, document.getElementById('lblTotalFood').innerText]);
             rows.push(['ค่าเดินทาง', document.getElementById('lblW1Travel').innerText, document.getElementById('lblW2Travel').innerText, document.getElementById('lblTotalTravel').innerText]);
-            rows.push(['รวมรายรับ', document.getElementById('lblW1Gross').innerText, document.getElementById('lblW2Gross').innerText, document.getElementById('lblTotalGross').innerText]);
+            rows.push(['รวมรายรับสุทธิ', document.getElementById('lblW1Gross').innerText, document.getElementById('lblW2Gross').innerText, document.getElementById('lblTotalGross').innerText]);
             rows.push(['', '', '', '']);
             rows.push(['หักประกันสังคม', document.getElementById('lblW1SsoPaid').innerText, document.getElementById('lblW2SsoPaid').innerText, document.getElementById('lblTotalSsoPaid').innerText]);
             rows.push(['หักกองทุน', document.getElementById('lblW1FundPaid').innerText, document.getElementById('lblW2FundPaid').innerText, document.getElementById('lblTotalFundPaid').innerText]);
@@ -422,11 +422,11 @@
             rows.push(['', '', '', '']);
             rows.push(['ยอดรับสุทธิ', document.getElementById('netW1').innerText, document.getElementById('netW2').innerText, document.getElementById('netTotal').innerText]);
             
-            let csv = rows.map(r => r.join(',')).join('\n');
+            let csv = rows.map(r => r.map(cell => `"${cell}"`).join(',')).join('\n');
             const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = `payroll_${document.getElementById('empName').value}_${new Date().toLocaleDateString('th-TH')}.csv`;
+            link.download = `payroll_${document.getElementById('empName').value.replace(/\s+/g, '_')}_${new Date().toLocaleDateString('th-TH')}.csv`;
             link.click();
         }
 

@@ -1,158 +1,156 @@
 # 💼 Payroll Calculator | ระบบคำนวณเงินเดือนรายวิก
 
-**An advanced Thai biweekly employee payroll calculator with real-time computation, OT tracking, and PDF export.**
+**ระบบคำนวณเงินเดือนพนักงานรายวิกแบบ Advanced พร้อมการติดตามโอที ส่งออก PDF และ Excel**
 
-## 🌐 Live Demo
-Visit: **https://jatnarung285-arch.github.io/**
+## 🌐 เข้าใช้งาน
+👉 **https://j-arch.github.io/**
 
-## ✨ Features
+## ✨ คุณสมบัติหลัก
 
-✅ **Biweekly Pay Cycles**
-- Week 1: Paid on the 25th (Days 1-15)
-- Week 2: Paid on the 10th (Days 16-30/31)
+### ✅ ระบบจ่ายเงินรายวิก
+- **วิก 1:** จ่ายวันที่ 25 (วันที่ 1-15 ของเดือน)
+- **วิก 2:** จ่ายวันที่ 10 (วันที่ 16-30/31 ของเดือน)
 
-✅ **Complete Salary Breakdown**
-- Base salary calculation
-- Overtime (OT) at 1.5x rate
-- Food allowance (per day)
-- Travel allowance (split per week)
+### ✅ การคำนวณเงินเดือนแบบสมบูรณ์
+- ค่าแรงพื้นฐาน
+- ค่าล่วงเวลา (OT) คิดในอัตรา 1.5 เท่า
+- ค่าข้าวประจำวัน
+- ค่าเดินทาง (แบ่งจ่ายตามวิก)
 
-✅ **Automatic Deductions**
-- Social security (per week)
-- Provident fund (5% of gross income)
-- Custom deductions (loans, etc.)
+### ✅ การหักเงินอัตโนมัติ
+- ประกันสังคม (ต่อวิก)
+- กองทุนสะสม (5% ของรายรับ)
+- รายการหักอื่น ฯ (เช่น ค่าจำนำ)
 
-✅ **Real-time Calculations**
-- Live updates as you type
-- Instant OT rate computation (Base Rate ÷ 8 × 1.5)
-- Summary statistics dashboard
+### ✅ คำนวณแบบ Real-time
+- อัปเดตผลลัพธ์ขณะพิมพ์
+- คำนวณอัตราโอทีอัตโนมัติ (ค่าแรง ÷ 8 × 1.5)
+- แสดงสรุปสถิติ
 
-✅ **Export & Share Options**
-- 🖨️ Print to PDF
-- 📋 Copy to clipboard
-- 📊 Export as CSV (Excel)
+### ✅ ตัวเลือกการส่งออก
+- 🖨️ พิมพ์เป็น PDF
+- 📋 คัดลอกไปยังคลิปบอร์ด
+- 📊 ส่งออกเป็น Excel (CSV)
+- 🔄 ปุ่มรีเซ็ตข้อมูล
 
-✅ **Modern UI/UX**
-- Responsive design (mobile, tablet, desktop)
-- Thai language support (Sarabun font)
-- Color-coded weeks (amber for Week 1, emerald for Week 2)
-- Smooth animations and transitions
+### ✅ ออกแบบสมัยใหม่
+- ตอบสนองได้ (มือถือ, แท็บเล็ต, เดสก์ทอป)
+- ภาษาไทยสมบูรณ์ (ฟอนต์ Sarabun)
+- การเข้ารหัสสีตามวิก (สีน้ำตาลสำหรับวิก 1, เขียวสำหรับวิก 2)
+- ภาพเคลื่อนไหวและการเปลี่ยนแปลงอย่างราบรื่น
 
-## 🚀 Quick Start
+## 🚀 การเริ่มต้นใช้งาน
 
-### Installation
+### การติดตั้ง
 ```bash
 git clone https://github.com/jatnarung285-arch/j-arch.github.io.git
 cd j-arch.github.io
 ```
 
-### Run Locally
-Simply open `index.html` in your web browser.
+### รันในเครื่อง
+เพียงเปิดไฟล์ `index.html` ในเบราว์เซอร์ของคุณ
 
-## 📋 How to Use
+## 📖 วิธีการใช้งาน
 
-1. **Enter Employee Info**
-   - Employee name
-   - Daily wage rate (default: 380 THB)
-   - Food allowance per day
-   - Monthly travel allowance
-   - Social security per week
+### 1. ป้อนข้อมูลพนักงาน
+- ชื่อพนักงาน
+- ค่าแรงต่อวัน (ค่าเริ่มต้น: 380 บาท)
+- ค่าข้าวต่อวัน
+- ค่าเดินทางรายเดือน
+- ประกันสังคมต่อวิก
 
-2. **Input Work Days & OT**
-   - Week 1: Days worked (max 15) + OT hours
-   - Week 2: Days worked (max 16) + OT hours
-   - Custom deductions if needed
+### 2. ป้อนข้อมูลการทำงาน
+- **วิก 1:** วันทำงานจริง + ชั่วโมง OT + หักต่าง ๆ
+- **วิก 2:** วันทำงานจริง + ชั่วโมง OT + หักต่าง ๆ
 
-3. **View Results**
-   - Real-time calculation
-   - Detailed breakdown table
-   - Net salary per week
-   - Monthly total
+### 3. ดูผลลัพธ์
+- ตารางการคำนวณละเอียด
+- ยอดรับสุทธิต่อวิก
+- ยอดรับสุทธิรวมเต็มเดือน
 
-4. **Export Data**
-   - Print payslip
-   - Copy to clipboard
-   - Download as CSV
+### 4. ส่งออกข้อมูล
+- พิมพ์เอกสารเงินเดือน
+- คัดลอกเพื่อแชร์
+- ส่งออกเป็น Excel
 
-## 📐 Calculation Formula
+## 📐 สูตรการคำนวณ
 
 ```
-Hourly Rate = Daily Wage ÷ 8 hours
-OT Hourly Rate = Hourly Rate × 1.5
+อัตราชั่วโมง = ค่าแรงต่อวัน ÷ 8 ชั่วโมง
+อัตราโอที = อัตราชั่วโมง × 1.5
 
-Base Pay = Days Worked × Daily Wage
-OT Pay = OT Hours × OT Hourly Rate
-Food Allowance = Days × Food Rate
-Travel Allowance = Monthly Amount ÷ 2 (split per week)
+ค่าแรงพื้นฐาน = วันทำงาน × ค่าแรงต่อวัน
+ค่าล่วงเวลา = ชั่วโมง OT × อัตราโอที
+ค่าข้าว = วันทำงาน × ค่าข้าวต่อวัน
+ค่าเดินทาง = จำนวนเดือน ÷ 2 (แบ่งต่อวิก)
 
-Gross Income = Base + OT + Food + Travel
+รายรับรวม = ค่าแรง + OT + ข้าว + เดินทาง
 
-Provident Fund = Gross × 5%
-Total Deductions = Social Security + Provident Fund + Other
+กองทุน = รายรับรวม × 5%
+รวมการหัก = ประกันสังคม + กองทุน + อื่น ฯ
 
-Net Salary = Gross - Total Deductions
+รายรับสุทธิ = รายรับรวม - รวมการหัก
 ```
 
-## 🛠️ Technology Stack
+## 🛠️ เทคโนโลยีที่ใช้
 
-- **HTML5** - Semantic markup
-- **Tailwind CSS** - Utility-first styling
-- **JavaScript (Vanilla)** - Real-time calculations
-- **Google Fonts** - Thai language (Sarabun)
+- **HTML5** - มาร์กอัป
+- **Tailwind CSS** - สไตล์อีกคลาสยูทิลิตี้
+- **JavaScript (Vanilla)** - คำนวณแบบเรียลไทม์
+- **Google Fonts** - ภาษาไท��� (Sarabun)
 - **Responsive Design** - Mobile-first approach
 
-## 📱 Browser Support
+## 📱 ความเข้ากันได้เบราว์เซอร์
 
-✓ Chrome/Edge (latest)
-✓ Firefox (latest)
-✓ Safari (latest)
-✓ Mobile browsers (iOS Safari, Chrome Mobile)
+✅ Chrome/Edge (ล่าสุด)
+✅ Firefox (ล่าสุด)
+✅ Safari (ล่าสุด)
+✅ เบราว์เซอร์มือถือ (iOS Safari, Chrome Mobile)
 
-## 🎨 UI Components
+## 🎨 ส่วนประกอบ UI
 
-- **Input Dashboard** - 3-column layout for employee info and weekly data
-- **Summary Statistics** - 4-card layout showing totals
-- **Payslip Document** - Print-optimized layout
-- **Action Buttons** - Print, copy, export functions
+- **แดชบอร์ดการป้อนข้อมูล** - เค้าโครง 3 คอลัมน์
+- **การ์ดสถิติสรุป** - เค้าโครง 4 การ์ด
+- **เอกสารเงินเดือน** - เค้าโครงที่เหมาะสมสำหรับการพิมพ์
+- **ปุ่มการทำงาน** - พิมพ์ คัดลอก ส่งออก
 
-## 📊 Improvements Made
+## 📝 การปรับปรุงที่ทำ
 
-✅ Added custom deductions field for Week 1 & 2
-✅ Real-time fund calculation display
-✅ Summary statistics cards (work days, OT hours, etc.)
-✅ Export to CSV functionality
-✅ Improved visual hierarchy and color coding
-✅ Better mobile responsiveness
-✅ Added reset and copy-to-clipboard features
-✅ Enhanced typography and spacing
-✅ Separated income and deduction sections in table
-✅ Added dark mode toggle (prepared)
-✅ Better form validation with min/max values
+✅ เพิ่มฟิลด์หักเงินอื่น ๆ สำหรับวิก 1 & 2
+✅ แสดงการคำนวณกองทุนแบบเรียลไทม์
+✅ แดชบอร์ดสถิติสรุปพร้อม 4 เมตริกหลัก
+✅ ฟังก์ชันการส่งออก CSV พร้อมชื่อไฟล์ที่มีการจัดรูปแบบ
+✅ คุณสมบัติคัดลอกไปยังคลิปบอร์ด
+✅ ปุ่มรีเซ็ตแบบฟอร์มพร้อมการยืนยัน
+✅ การจัดตำแหน่งปุ่มสลับโหมดมืด (เตรียมไว้)
+✅ แยกส่วนรายรับและการหักในตาราง
+✅ ปรับปรุงความลึกของภาพ
+✅ การตรวจสอบแบบฟอร์มที่ดีขึ้น
 
-## 📝 License
+## 📄 ใบอนุญาต
 
-MIT License - Feel free to use and modify for your needs.
+MIT License - ใช้และปรับแต่งได้อย่างอิสระตามความต้องการของคุณ
 
-## 👤 Author
+## 👨‍💼 ผู้พัฒนา
 
 **jatnarung285-arch**
 - GitHub: [@jatnarung285-arch](https://github.com/jatnarung285-arch)
 
-## 🤝 Contributing
+## 🤝 การมีส่วนร่วม
 
-Contributions are welcome! Feel free to fork and submit pull requests.
+การมีส่วนร่วมยินดีต้อนรับ! ท้องเว็บไซต์ fork ส่ง pull request
 
-## 💡 Future Enhancements
+## 💡 แผนพัฒนาในอนาคต
 
-- [ ] Dark mode toggle functionality
-- [ ] Multiple employee management
-- [ ] Database integration
-- [ ] Monthly report generation
-- [ ] Email payslip feature
-- [ ] Thai holiday calendar integration
-- [ ] Multi-language support
+- [ ] การใช้งานสลับโหมดมืด
+- [ ] การจัดการพนักงานหลายคน
+- [ ] การรวมฐานข้อมูล
+- [ ] การสร้างรายงานรายเดือน
+- [ ] คุณสมบัติการส่งอีเมลเงินเดือน
+- [ ] การรวมปฏิทินวันหยุดไทย
+- [ ] ข้อมูลหลายภาษา
 
 ---
 
-**Last Updated:** May 2026
-**Version:** 2.0 (Improved)
+**อัปเดตครั้งล่าสุด:** พฤษภาคม 2026
+**เวอร์ชัน:** 2.0 (ปรับปรุง)

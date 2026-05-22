@@ -2,68 +2,68 @@
 
 ## [2.0] - 2026-05-22
 
-### ✨ Added
-- Custom deductions field for each week (loans, penalties, etc.)
-- Real-time provident fund (5%) display in input cards
-- Summary statistics dashboard with 4 key metrics
-- Export to CSV functionality with formatted filename
-- Copy to clipboard feature for quick sharing
-- Reset form button with confirmation
-- Dark mode toggle button (UI prepared)
-- Better color-coded sections (income vs deductions)
-- Enhanced input field styling with hover effects
-- OT rate display in summary stats
+### ✨ เพิ่มเติม
+- ฟิลด์การหักเงินแบบกำหนดเองสำหรับแต่ละวิก (เช่น ค่าจำนำ ค่าปรับ)
+- แสดงผลกองทุนสะสม (5%) แบบเรียลไทม์ในการ์ดการป้อนข้อมูล
+- แดชบอร์ดสถิติสรุปพร้อม 4 เมตริกหลัก
+- ฟังก์ชันการส่งออก CSV พร้อมชื่อไฟล์ที่มีการจัดรูปแบบ
+- คุณสมบัติคัดลอกไปยังคลิปบอร์ดเพื่อการแชร์ที่รวดเร็ว
+- ปุ่มรีเซ็ตแบบฟอร์มพร้อมการยืนยัน
+- ปุ่มสลับโหมดมืด (UI เตรียมไว้)
+- ส่วนที่แยกออกจากกันสำหรับรายรับและการหัก
+- ปรับปรุงสไตล์ฟิลด์การป้อนข้อมูลพร้อมผลกระทบการโฟกัส
+- แสดงอัตราโอทีในสมมติฐานสรุป
 
-### 🎨 Improved
-- Visual hierarchy with better spacing and padding
-- Responsive grid layout for smaller screens
-- Color coding for different pay cycles (amber/emerald)
-- Table sections separated into Income and Deductions
-- Enhanced final summary block with gradient
-- Better form labels with placeholder text
-- Improved button styling with icons
-- Added min/max constraints to day inputs
-- Better accessibility with form validation
+### 🎨 ปรับปรุง
+- ลำดับชั้นภาพที่ดีขึ้นพร้อมการเว้นวรรคและการเบิก
+- เค้าโครงตาราง Responsive สำหรับหน้าจอขนาดเล็ก
+- การใช้รหัสสีสำหรับวัฏจักรการจ่ายที่แตกต่างกัน (สีน้ำตาล/เขียว)
+- ส่วนตารางแยกออกเป็นรายรับและการหัก
+- บล็อกสรุปสุดท้ายที่มีการไล่ระดับสี
+- ป้ายกำกับแบบฟอร์มที่ดีขึ้นพร้อมข้อความยึด
+- สไตล์ปุ่มที่ปรับปรุงแล้วพร้อมไอคอน
+- เพิ่มข้อ จำกัด min/max ให้กับการป้อนข้อมูลวัน
+- การเข้าถึง Beta ที่ดีขึ้น
 
-### 🐛 Fixed
-- Fund calculation display was hidden, now visible
-- Improved calculation accuracy
-- Better mobile layout for large tables
-- Print CSS optimizations
+### 🐛 แก้ไข
+- การคำนวณกองทุนที่ซ่อนอยู่ ตอนนี้มองเห็นได้
+- ความแม่นยำในการคำนวณที่ปรับปรุง
+- เค้าโครงมือถือที่ดีขึ้นสำหรับตารางขนาดใหญ่
+- การปรับให้เหมาะสม CSS สำหรับการพิมพ์
 
 ### 📱 UI/UX
-- Added quick action buttons above input dashboard
-- Summary cards with gradient backgrounds
-- Improved payslip document styling
-- Better visual feedback on interactions
-- Enhanced typography hierarchy
+- เพิ่มปุ่มการทำงานด่วนเหนือแดชบอร์ดการป้อนข้อมูล
+- การ์ดสรุปพร้อมพื้นหลังไล่ระดับสี
+- สไตล์เอกสารเงินเดือนที่ปรับปรุง
+- ผลกระทบภาพที่ดีขึ้นจากการโต้ตอบ
+- ลำดับชั้นของรูปแบบอักษรที่ปรับปรุง
 
 ---
 
 ## [1.0] - 2026-05-15
 
-### Initial Release
-- Basic biweekly payroll calculator
-- Two pay cycles (Week 1: 25th, Week 2: 10th)
-- Base salary, OT, food, and travel allowance calculation
-- Social security and provident fund deductions
-- Print to PDF functionality
-- Thai language support
-- Responsive design
+### การปล่อยเริ่มต้น
+- เครื่องคำนวณเงินเดือนรายวิกพื้นฐาน
+- ทั้งสองวัฏจักรการจ่ายเงิน (วิก 1: 25, วิก 2: 10)
+- ค่าแรง OT ค่าข้าว และการคำนวณค่าเดินทาง
+- การหักประกันสังคมและกองทุนสะสม
+- ฟังก์ชันการพิมพ์เป็น PDF
+- ข้อมูลภาษาไทยสมบูรณ์
+- ออกแบบอย่างตอบสนอง
 
 ---
 
-## Future Roadmap
+## แผนภูมิพัฒนาการในอนาคต
 
-### v2.1 (Planned)
-- Dark mode full implementation
-- Employee database storage (LocalStorage)
-- Multiple employees management
-- Historical payroll records
+### v2.1 (วางแผนไว้)
+- การใช้งานโหมดมืดแบบเต็ม
+- การจัดเก็บฐานข้อมูลพนักงาน (LocalStorage)
+- การจัดการพนักงานหลายคน
+- บันทึกประวัติเงินเดือน
 
-### v3.0 (Planned)
-- Backend integration
-- User authentication
-- Admin dashboard
-- Monthly reports
-- Email notifications
+### v3.0 (วางแผนไว้)
+- การรวมเซิร์ฟเวอร์
+- การตรวจสอบความถูกต้องของผู้ใช้
+- แดชบอร์ดผู้ดูแลระบบ
+- รายงานรายเดือน
+- การแจ้งเตือนทางอีเมล
